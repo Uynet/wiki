@@ -12,4 +12,7 @@ export default class EntityManager{
   static Add(e){
     this.list.push(e);
   }
+  static Update(){
+    this.list.forEach(e=>e.Update());
+  }
  }
