@@ -1,8 +1,12 @@
+import Input from "./input.js";
 export default class Entity{
   constructor(pos){
     this.pos = pos;
   }
   Update(){
-    this.pos.x++;
+    //39:→
+    if(Input.isKeyInput(39)){
+      this.pos.x++;
+    };
   }
 }

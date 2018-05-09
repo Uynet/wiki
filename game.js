@@ -1,11 +1,13 @@
 import Drawer from "./drawer.js";
 import Entity from "./entity.js";
+import Input from "./input.js";
 import EntityManager from "./entityManager.js";
 
 export default class Game{
   static Init(){            
     Drawer.Init();
     EntityManager.Init();
+    Input.Init();
 
     Game.Run();
   }
