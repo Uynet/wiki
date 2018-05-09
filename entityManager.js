@@ -1,11 +1,11 @@
-import Entity from "./entity.js";
+import Player from "./player.js";
+import Wall from "./wall.js";
 
 export default class EntityManager{
   static Init(){
     this.list =[]; 
-
-    let a = new Entity({x:10,y:10});
-    let b = new Entity({x:80,y:80});
+    let a = new Player({x:10,y:10});
+    let b = new Wall({x:80,y:80});
     this.Add(a);
     this.Add(b);
   }
@@ -15,4 +15,4 @@ export default class EntityManager{
   static Update(){
     this.list.forEach(e=>e.Update());
   }
- }
+}
