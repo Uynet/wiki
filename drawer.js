@@ -13,7 +13,7 @@ export default class Drawer{
     this.ctx.fillRect(0,0,300,400);//画面クリア
     
     for(let e of entityList){
-      this.SetColor(255,255,255);
+      this.SetColor(e.color.r,e.color.g,e.color.b);
       this.ctx.fillRect(e.pos.x,e.pos.y,32,32);
     }
 
